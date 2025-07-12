@@ -1,5 +1,6 @@
 import { Expect, Equal } from "@lib/testing";
 
+//@TIP PropertyKey
 type TupleToObject<T extends readonly PropertyKey[]> = {
   [K in T[number]]: K;
 };

@@ -435,7 +435,7 @@ And if nothing else, there's no shame in looking at the solutions at this point.
 
 /////*/
 
-// this is correct! :)
+// this is correFct! :)
 playSong("Demiurge", 2012);
 
 // @ts-expect-error this is incorrect because the first argument should not be a number
