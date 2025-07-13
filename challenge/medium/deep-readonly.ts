@@ -106,6 +106,7 @@ type DeepReadonly1<T extends Record<string, any>> = {
 //   readonly [K in keyof T]: keyof T[K] extends never ? T[K] : DeepReadonly<T[K]>;
 // };
 
+// solution 2
 type DeepReadonly<T extends Record<string, any>> = {
   readonly [P in keyof T]: keyof T[P] extends never ? T[P] : DeepReadonly<T[P]>;
 };
